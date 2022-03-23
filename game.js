@@ -918,8 +918,8 @@ var startGame = function ()
 
     function renderArea(ctx)  {
     
-  //    if (!bg) {
-    //    pattern.draw(ctx);
+      if (!bg) {
+        pattern.draw(ctx);
         
         ctx.fillStyle = "rgba(120,200,120,0.5)"; 
         ctx.fillRect(0, 0, c.width, c.height)
@@ -929,11 +929,11 @@ var startGame = function ()
         ctx.fillStyle = " rgba(200,50,50,0.7)";
         ctx.fillRect(0, c.height - c.width / 4 - c.height / 20, c.width, c.height / 20);
         
- //       bg= new Image(); 
- //       bg.src = c.toDataURL();
- //       } else {
- //           ctx.drawImage(bg, 0, 0, c.width, c.height );
-  //      } 
+        bg= new Image(); 
+        bg.src = c.toDataURL();
+        } else {
+            ctx.drawImage(bg, 0, 0, c.width, c.height );
+        } 
         
 
         ctx.drawImage(resources.get('http://farm8.staticflickr.com/7231/7269527534_4d8ce226de.jpg'), 0, 0, 500, c.width / 4, 0, c.height - c.width / 4, 500, c.width / 4);

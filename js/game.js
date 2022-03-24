@@ -79,8 +79,8 @@ function init() {
 	canvas.height = HEIGHT;
 
     // Initialise socket connection
-    url = "http://" + document.domain;
-    //url = "http://45.55.235.17";
+    //url = "http://" + document.domain;
+    url = "http://detailed-canyon-buckaroo.glitch.com";
     socket = io.connect(url, {port: GAMESERVER_PORT, transports: ['websocket']});
 
     // Load images etc.

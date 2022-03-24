@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>My First Game(Unreleased)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/game.css">
+<script src="js/common.js"></script>
+<script src="js/socket.io.js"></script>
+<script src="js/controls.js"></script>
+<script src="js/player.js"></script>
+<script src="js/bullets.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/game.js"></script>
+</head>
+<body id="area">
+<div id="preload">
+	<div id="startMenu">
+		<div class="logo"></div>
+		<form onsubmit="boot(); return false;">
+			<div id="status"></div>
+			<input type="text" id="name" placeholder="Enter Your Name" maxlength="100" autocomplete="off" autofocus required />
+			<a href="#" onclick="boot(); return false;" class="button">Play</a>
+		</form>
+	</div>
+	<div>Ishutinov Dmitry</div>
+</div>
+
+<div id="game">
+	<div id="gameEnd"></div>
+	<div id="chatBtn" onclick="showChat();"></div>
+	<div id="chatContainer">
+		<div id="chat"></div>
+		<form onsubmit="sendMessage(); return false;">
+		<input id="chatMsg" type="text" autocomplete="off" autofocus />
+		<input type="submit" value="&crarr;"/>
+		</form>
+	</div>
+</div>
+</body>
+</html>

@@ -81,7 +81,7 @@ function init() {
     // Initialise socket connection
     //url = "http://" + document.domain;
     url = "https://detailed-canyon-buckaroo.glitch.me";
-    socket = io.connect(url, {port: GAMESERVER_PORT, transports: ['websocket']});
+    socket = io.connect(url, {transports: ['websocket']});
 
     // Load images etc.
     loadResources();

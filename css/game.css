@@ -18,7 +18,7 @@ body {
 }
 
 canvas {
-	background-image: url("/client/images/bg.jpg");
+	background-image: url("/images/bg.jpg");
 	background-repeat: repeat;
     padding: 0;
     margin: auto;
@@ -63,7 +63,7 @@ canvas:active {
     width:100%;
     height:100%;
     text-align:center;
-    background-image: url("/client/images/preload.jpg");
+    background-image: url("/images/preload.jpg");
     background-size: cover;
     -moz-background-size: cover;
     background-repeat:no-repeat;
@@ -85,7 +85,7 @@ canvas:active {
 
 #chatBtn {
 	position:fixed;
-	background-image: url("/client/images/icons/chat.png");
+	background-image: url("/images/icons/chat.png");
 	cursor: pointer;
 	display: none;
 	width: 50px;
@@ -236,6 +236,6 @@ a.button:hover {
 }
 
 .logo {
-	background: url("/client/images/logo.png") no-repeat center center ;
+	background: url("/images/logo.png") no-repeat center center ;
 	height:148px;
 }

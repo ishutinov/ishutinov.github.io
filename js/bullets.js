@@ -21,7 +21,7 @@ var Bullet = function(startX, startY, startAngle, startSpeed) {
     var draw = function(ctx) {
         drawImage(img_bulletshadow, x+3, y+3);
         drawImage(img, x, y);
-        //ctx.moveTo(x, y);
+        ctx.moveTo(x, y);
     };
 
     // Define which variables and methods can be accessed

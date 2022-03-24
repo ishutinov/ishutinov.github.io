@@ -34,7 +34,7 @@ var snd_start; // Round start
 
 // Globals
 var MAX_SHOT_LOADING_TIME = 80,     // ??? alert
-    GAMESERVER_PORT = 7777,         // Game server port
+    GAMESERVER_PORT = 3000,         // Game server port
 	PLAYER_SPEED = 2,               // Player speed
     SHOT_COOLOFF_TIME = 60,
     RING_RADIUS = 225,
